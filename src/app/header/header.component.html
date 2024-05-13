@@ -1,9 +1,57 @@
-<!-- Mian toolbar (top) -->
 <mat-toolbar>
-    
-</mat-toolbar>
+  <!-- Mian toolbar (top) -->
+  <mat-toolbar-row>
 
-<!-- Days toolbar (bottom) -->
-<mat-toolbar>
+    <!-- Menu area -->
+    <div>
+      <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Iten 1</button>
+        <button mat-menu-item>Iten 2</button>
+        <button mat-menu-item>Iten 3 </button>
+      </mat-menu>
+    </div>
 
+    <!-- Calendar area -->
+    <div>
+      <button mat-button>
+        <mat-icon>arrow_back_ios</mat-icon>
+      </button>
+
+      <article>
+        <span>Month</span>
+        <span>Year</span>
+      </article>
+
+      <button mat-button>
+        <mat-icon>arrow_forward_ios</mat-icon>
+      </button>
+    </div>
+
+    <!-- Sharing area -->
+    <div>
+      <button mat-button>
+        <mat-icon>share</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar-row>
+
+  <!-- Days toolbar (bottom) -->
+  <mat-toolbar-row>
+    <button mat-button>
+      <mat-icon>arrow_back_ios</mat-icon>
+    </button>
+
+    <article>
+        <section *ngFor="let day of [1, 2, 3, 4, 5]">
+            <button mat-button>{{ day }}</button>
+        </section>
+    </article>
+
+    <button mat-button>
+      <mat-icon>arrow_forward_ios</mat-icon>
+    </button>
+  </mat-toolbar-row>
 </mat-toolbar>

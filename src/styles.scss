@@ -1,4 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// Colors
+$green-one: #243d1e;
+$green-two:#121e0f;
+
+$light-green-one: #ddffcd;
+$light-green-two: #b9ddaa;
+$light-green-three: #9ade87;
+$light-green-four: #82c570;
+
+$white-one: #eeeeee;
+$white-two: #b7b7b7;
+
+$black-one: #101010;
+$black-two: #181818;
+
+// Toolbar variables
+$tb-off-radios: 0 0 8px 8px;
+$tb-radios: 0 0 10px 10px;

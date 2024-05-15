@@ -1,5 +1,16 @@
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+// Font-family
+$font-family: "Rajdhani", sans-serif;
 
 // Colors
 $green-one: #243d1e;
@@ -21,5 +32,4 @@ $tb-off-radios: 0 0 8px 8px;
 $tb-radios: 0 0 10px 10px;
 $tb-elevation-padding: 10px;
 $tb-button-height: 38px;
-$tb-button-width: 64px;
 $tb-button-font-size: 18px;

@@ -1,0 +1,108 @@
+@import '../../styles.scss';
+
+header {
+  padding-bottom: $tb-elevation-padding;
+  background-color: $black-one;
+  border-radius: $tb-off-radios;
+
+  mat-toolbar {
+    background-color: $black-two;
+    border-radius: $tb-radios;
+
+    #top-row {
+      position: relative;
+
+      #menu {
+        position: absolute;
+        display: flex;
+        gap: 5px;
+
+        button {
+          font-family: $font-family;
+        }
+      }
+
+      #calendar {
+        margin: auto;
+        display: flex;
+
+        button {
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+        }
+
+        article {
+          font-family: $font-family;
+          color: $white-two;
+          cursor: default;
+        }
+
+        .right {
+          padding-left: 9px;
+        }
+      }
+
+      #sharing {
+        position: absolute;
+        right: 16px;
+
+        button {
+          height: $tb-button-height;
+          padding: 0;
+          border: 1px solid $black-one;
+
+          mat-icon {
+            font-size: $tb-button-font-size;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    #botton-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      article {
+        display: flex;
+        gap: 5px;
+
+        button {
+          border-radius: 50%;
+        }
+
+        .midle {
+          background-color: $light-green-four;
+          color: $green-two;
+
+          &:hover {
+            color: $green-one;
+            background-color: $light-green-two;
+          }
+        }
+      }
+
+      .right {
+        padding-left: 9px;
+      }
+    }
+
+    button {
+      min-width: $tb-button-height;
+      color: $white-two;
+      transition: all ease 0.2s;
+
+      &:hover {
+        color: $light-green-four;
+      }
+    }
+  }
+}

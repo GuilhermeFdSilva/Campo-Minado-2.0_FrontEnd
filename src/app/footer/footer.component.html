@@ -1,3 +1,8 @@
-<mat-toolbar>
-    A outra barra de ferramentes
-</mat-toolbar>
+<footer>
+  <mat-toolbar>
+    <span>&copy; Guilherme França</span>
+    <a *ngFor="let link of main_links" [href]="link.link" target="_blank">
+      <img [src]="link.icon" [alt]="link.description">
+    </a>
+  </mat-toolbar>
+</footer>

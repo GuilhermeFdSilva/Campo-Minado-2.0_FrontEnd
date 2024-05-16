@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
-html,
-body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-}
-
 // Font-family
 $font-family: "Rajdhani", sans-serif;
 
@@ -36,3 +27,13 @@ $tb-radios-top: 10px 10px 0 0;
 $tb-button-height: 38px;
 $tb-button-font-size: 18px;
 $tb-icon-height: 28px;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: $green-one;
+}

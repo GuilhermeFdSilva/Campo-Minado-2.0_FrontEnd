@@ -3,11 +3,11 @@
 header {
   padding-bottom: $tb-elevation-padding;
   background-color: $black-one;
-  border-radius: $tb-off-radios;
+  border-radius: $tb-off-radios-botton;
 
   mat-toolbar {
     background-color: $black-two;
-    border-radius: $tb-radios;
+    border-radius: $tb-radios-botton;
 
     #top-row {
       position: relative;

@@ -7,13 +7,9 @@ import { HardComponent } from './main/hard/hard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'facil', pathMatch: 'full' },
-  {
-    path: '', component: MainComponent, children: [
-      { path: 'facil', component: EasyComponent },
-      { path: 'medio', component: MediumComponent },
-      { path: 'dificil', component: HardComponent }
-    ]
-  }
+  { path: 'facil', component: EasyComponent },
+  { path: 'medio', component: MediumComponent },
+  { path: 'dificil', component: HardComponent }
 ];
 
 @NgModule({

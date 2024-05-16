@@ -13,6 +13,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MainComponent } from './main/main.component';
 import { EasyComponent } from './main/easy/easy.component';
+import { MediumComponent } from './main/medium/medium.component';
+import { HardComponent } from './main/hard/hard.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { EasyComponent } from './main/easy/easy.component';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    EasyComponent
+    EasyComponent,
+    MediumComponent,
+    HardComponent
   ],
   imports: [
     BrowserModule,

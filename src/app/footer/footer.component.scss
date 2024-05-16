@@ -1,0 +1,32 @@
+@import '../../styles.scss';
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: $tb-elevation-padding;
+  background-color: $black-one;
+  border-radius: $tb-off-radios-top;
+
+  mat-toolbar {
+    background-color: $black-two;
+    border-radius: $tb-radios-top;
+    gap: 10px;
+    justify-content: center;
+
+    span {
+      font-family: $font-family;
+      color: $white-two;
+      cursor: default;
+    }
+
+    a {
+      height: $tb-icon-height;
+
+      img {
+        height: 100%;
+        filter: grayscale(100);
+      }
+    }
+  }
+}

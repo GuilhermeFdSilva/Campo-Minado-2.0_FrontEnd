@@ -5,16 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { MainComponent } from './main/main.component';
+import { EasyComponent } from './main/easy/easy.component';
+import { MediumComponent } from './main/medium/medium.component';
+import { HardComponent } from './main/hard/hard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Material
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
-import { MainComponent } from './main/main.component';
-import { EasyComponent } from './main/easy/easy.component';
-import { MediumComponent } from './main/medium/medium.component';
-import { HardComponent } from './main/hard/hard.component';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HardComponent } from './main/hard/hard.component';
     // Material
     MatIconModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

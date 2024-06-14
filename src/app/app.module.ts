@@ -5,9 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { MainComponent } from './main/main.component';
-import { EasyComponent } from './main/easy/easy.component';
-import { HardComponent } from './main/hard/hard.component';
+import { EasyComponent } from './easy/easy.component';
+import { HardComponent } from './hard/hard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Material
@@ -21,7 +20,6 @@ import {MatDividerModule} from '@angular/material/divider';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent,
     EasyComponent,
     HardComponent
   ],

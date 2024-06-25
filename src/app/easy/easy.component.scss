@@ -1,0 +1,125 @@
+@import '../../styles.scss';
+
+main {
+  min-height: calc(100vh - 212px);
+  padding: 30px 60px;
+
+  #game-container {
+    width: fit-content;
+    margin: auto;
+    display: grid;
+    gap: 5px;
+
+    .button-container {
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+      border-radius: $gm-off-radios;
+
+      .button {
+        width: 100%;
+        height: 100%;
+        padding: 2px 0 0 0;
+        border-radius: $gm-radios;
+        border: none;
+
+        img {
+          height: 20px;
+        }
+
+        span {
+          font-family: $font-family;
+          font-weight: bold;
+          padding: 0;
+        }
+      }
+    }
+
+    .close-button-container {
+      padding-bottom: $gm-elevation-padding;
+      background-color: $white-two;
+      transition: all ease 0.3s;
+
+      .close-button {
+        background-color: $white-one;
+        transition: all ease 0.3s;
+
+      }
+
+      &:hover {
+        background-color: $light-green-two;
+
+        .close-button {
+          background-color: $light-green-one;
+        }
+      }
+
+      &:active {
+        padding-bottom: 2px;
+        transform: scaleY(0.93) translateY(1px);
+        background-color: $light-green-four;
+
+        .close-button {
+          background-color: $light-green-three;
+        }
+      }
+    }
+
+    .open-button-container {
+      padding-bottom: $gm-open-elevation-padding;
+      background-color: $white-three;
+
+      .open-button {
+        background-color: $white-two;
+      }
+    }
+
+    .mined-button-container {
+      padding-bottom: $gm-open-elevation-padding;
+      background-color: $red-two;
+
+      .mined-button {
+        background-color: $red-one;
+      }
+    }
+  }
+
+  mat-divider {
+    width: 50%;
+    margin: 15px auto;
+  }
+
+  #game-info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+
+      .test {
+        width: 70px;
+        height: 50px;
+        background-color: rgb(random($limit: 255), random($limit: 255), random($limit: 255));
+      }
+    }
+
+    #bombs {
+      img {
+        height: 50px;
+      }
+
+      span {
+        box-sizing: border-box;
+        width: 90px;
+        padding-left: 10px;
+        font-family: $font-family;
+        color: $white-two;
+        font-size: 45px;
+      }
+    }
+  }
+}

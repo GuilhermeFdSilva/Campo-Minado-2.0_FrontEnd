@@ -12,8 +12,12 @@ $light-green-two: #b9ddaa;
 $light-green-three: #9ade87;
 $light-green-four: #82c570;
 
+$red-one: #e4472b;
+$red-two: #bb3521;
+
 $white-one: #eeeeee;
 $white-two: #b7b7b7;
+$white-three: #8c8c8c;
 
 $black-one: #101010;
 $black-two: #181818;
@@ -33,6 +37,18 @@ $gm-elevation-padding: 4px;
 $gm-open-elevation-padding: 2px;
 $gm-off-radios: 6px;
 $gm-radios: 6px;
+
+// Root variables
+:root {
+  --one-bomb: #0000FF;
+  --two-bombs: #006400;
+  --three-bombs: #8B0000;
+  --four-bombs: #8B008B;
+  --five-bombs: #FF4500;
+  --six-bombs: #2E8B57;
+  --seven-bombs: #483D8B;
+  --eight-bombs: #A52A2A;
+}
 
 html,
 body {

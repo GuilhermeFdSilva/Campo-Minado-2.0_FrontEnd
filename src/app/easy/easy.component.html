@@ -1,0 +1,49 @@
+<main>
+  <div id="game-container"
+      [ngStyle]="{
+          'grid-template-rows': 'repeat(' + board.getRows + ', 1fr)',
+          'grid-template-columns': 'repeat(' + board.getColumns + ', 1fr)'
+      }">
+    <div *ngFor="let field of board.getFields"
+        class="button-container"
+        [ngClass]="field.isOpen ? containerButtonClass(field) : 'close-button-container'"
+        [style.gridRow]="field.getRow"
+        [style.gridColumn]="field.getColumn">
+      <button class="button"
+            [ngClass]="field.isOpen ? buttonClass(field) : 'close-button'"
+            (click)="board.openField(field.getRow, field.getColumn)"
+            (contextmenu)="toggleFlaged($event, field)">
+        <img src="../../assets/icons/Flag.png" alt="Flag" *ngIf="field.isFlagged">
+        <img src="../../assets/icons/Bomb.png" alt="Bomb" *ngIf="field.isOpen && field.isMined">
+        <span *ngIf="field.isOpen && !field.isMined"
+              [style.color]="spanColor(field)">
+          {{ field.minesAround() }}
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <!-- Game informations: Number of bombs and time -->
+  <div id="game-info">
+
+    <!-- Number of bombs -->
+    <article id="bombs">
+      <img src="../../assets/icons/Bomb.png" alt="Bomb">
+      <span> = {{ board.bombCounter() }}</span>
+    </article>
+
+    <!-- Switch responsive -->
+    <article>
+      <div class="test"></div>
+      <div class="test"></div>
+    </article>
+
+    <!-- Time -->
+    <article>
+      <div class="test"></div>
+      <div class="test"></div>
+    </article>
+  </div>
+</main>

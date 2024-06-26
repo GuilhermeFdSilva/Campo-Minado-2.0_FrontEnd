@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { EasyComponent } from './easy/easy.component';
 import { HardComponent } from './hard/hard.component';
+import { InitialDialogComponent } from './initial-dialog/initial-dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Material
@@ -21,7 +22,8 @@ import {MatDividerModule} from '@angular/material/divider';
     HeaderComponent,
     FooterComponent,
     EasyComponent,
-    HardComponent
+    HardComponent,
+    InitialDialogComponent
   ],
   imports: [
     BrowserModule,

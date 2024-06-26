@@ -92,24 +92,15 @@ main {
   #game-info {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
 
-    article {
+    .info {
       display: flex;
-      justify-content: center;
       align-items: center;
-      gap: 5px;
 
-      .test {
-        width: 70px;
-        height: 50px;
-        background-color: rgb(random($limit: 255), random($limit: 255), random($limit: 255));
-      }
-    }
-
-    #bombs {
       img {
-        height: 50px;
+        height: 45px;
+        transform: translateY(-3px);
       }
 
       span {

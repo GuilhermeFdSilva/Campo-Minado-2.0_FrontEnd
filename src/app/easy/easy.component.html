@@ -11,7 +11,7 @@
         [style.gridColumn]="field.getColumn">
       <button class="button"
             [ngClass]="field.isOpen ? buttonClass(field) : 'close-button'"
-            (click)="board.openField(field.getRow, field.getColumn)"
+            (click)="openField(field.getRow, field.getColumn)"
             (contextmenu)="toggleFlaged($event, field)">
         <img src="../../assets/icons/Flag.png" alt="Flag" *ngIf="field.isFlagged">
         <img src="../../assets/icons/Bomb.png" alt="Bomb" *ngIf="field.isOpen && field.isMined">
@@ -29,21 +29,15 @@
   <div id="game-info">
 
     <!-- Number of bombs -->
-    <article id="bombs">
+    <article class="info">
       <img src="../../assets/icons/Bomb.png" alt="Bomb">
       <span> = {{ board.bombCounter() }}</span>
     </article>
 
-    <!-- Switch responsive -->
-    <article>
-      <div class="test"></div>
-      <div class="test"></div>
-    </article>
-
     <!-- Time -->
-    <article>
-      <div class="test"></div>
-      <div class="test"></div>
+    <article class="info">
+      <img src="../../assets/icons/Clock.png" alt="Clock">
+      <span>{{ getMinutes() + ':' + getSeconds() }}</span>
     </article>
   </div>
 </main>

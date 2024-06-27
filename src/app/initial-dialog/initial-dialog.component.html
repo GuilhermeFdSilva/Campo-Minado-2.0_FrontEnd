@@ -1,26 +1,34 @@
 <mat-dialog-content>
   <header>
     <h2>
-      Bem-vindo ao Campo Minado! 💣
+      💣 Bem-vindo ao Campo Minado! 💣
     </h2>
+    <p>O objetivo do jogo é descobrir onde estão todas minas.</p>
   </header>
 
   <main>
-    <p>O objetivo do jogo é descobrir onde estão todas minas.</p>
-
     <h3>1. Começando</h3>
-    <p>Clique em qualquer campo para abri-lo. Se for uma mina, o jogo termina. 💥</p>
+    <p>Clique em qualquer campo para abri-lo. Se for uma mina, você perde. 💥</p>
 
-    <h3>2. Bombas ao Redor</h3>
-    <p>O número em cada campo aberto revela quantas minas estão ao seu redor. Assim você pode tentar adivinhar quais
-      campos
-      são seguros para clicar. 🤔</p>
-    <img src="" alt="">
+    <div class="image-item">
+      <article>
+        <h3>2. Bombas ao Redor</h3>
+        <p>O número em cada campo aberto revela quantas minas estão ao seu redor. Assim você pode tentar adivinhar quais
+          campos
+          são seguros para clicar. 🤔</p>
+      </article>
+      <img src="../../assets/icons/tutorial/Bombs-around.png" alt="Bombs around">
+    </div>
 
-    <h3>3. Marcando Minas</h3>
-    <p>Para marcar um campo que você acredita conter uma mina, clique com o botão direito do mouse. Isso colocará uma
-      bandeira no campo, ajudando você a lembrar que ali pode haver uma mina. 🚩</p>
-    <img src="" alt="">
+    <div class="image-item">
+      <article>
+        <h3>3. Marcando Minas</h3>
+        <p>Para marcar um campo que você acredita conter uma mina, clique com o botão direito do mouse. Isso colocará
+          uma
+          bandeira no campo, ajudando você a lembrar que ali pode haver uma mina. 🚩</p>
+      </article>
+      <img src="../../assets/icons/tutorial/Flagged.png" alt="Flagged">
+    </div>
 
     <h3>4. Ganhar o Jogo</h3>
     <p>Você vence quando todos os campos que não contêm minas estiverem abertos! 🏅</p>
@@ -28,7 +36,20 @@
     <h3>Que a sorte esteja sempre a seu favor! </h3>
   </main>
 
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Armazenamento</mat-panel-title>
+    </mat-expansion-panel-header>
+    <h3>Como Funciona o Salvamento dos Jogos?</h3>
+    <p>Nosso jogo salva automaticamente seu progresso usando a memória do navegador. Isso significa que você pode fechar
+      e reabrir o navegador sem perder sua partida.</p>
+    <p><strong>Importante:</strong> Se você limpar os dados do navegador, seu progresso no jogo também será apagado.</p>
+  </mat-expansion-panel>
+
   <mat-dialog-actions>
-    
+    <mat-checkbox>Armazenamento</mat-checkbox>
+    <div id="button-container">
+      <button mat-button>OK</button>
+    </div>
   </mat-dialog-actions>
 </mat-dialog-content>

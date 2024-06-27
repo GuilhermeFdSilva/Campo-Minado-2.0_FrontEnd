@@ -55,7 +55,7 @@ main {
       }
 
       &:active {
-        padding-bottom: 2px;
+        padding-bottom: $gm-open-elevation-padding;
         transform: scaleY(0.93) translateY(1px);
         background-color: $light-green-four;
 

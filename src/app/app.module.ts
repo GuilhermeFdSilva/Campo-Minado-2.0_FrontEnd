@@ -15,7 +15,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatDialogModule } from '@angular/material/dialog'
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { MatDialogModule } from '@angular/material/dialog'
     MatToolbarModule,
     MatButtonModule,
     MatDividerModule,
-    MatDialogModule
+    MatDialogModule,
+    MatExpansionModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

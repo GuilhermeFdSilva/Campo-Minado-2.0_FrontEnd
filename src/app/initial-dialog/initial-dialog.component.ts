@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./initial-dialog.component.scss']
 })
 export class InitialDialogComponent {
-
+  public static getConfig(): any {
+    return {
+      width: '90vw'
+    }
+  }
 }

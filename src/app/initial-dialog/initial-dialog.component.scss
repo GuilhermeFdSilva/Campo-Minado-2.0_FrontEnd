@@ -1,0 +1,144 @@
+@import '../../styles.scss';
+
+mat-dialog-content {
+  background-color: $black-one;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    border: 1px solid $black-one;
+    background-color: $light-green-four;
+
+    &:hover {
+      background-color: $light-green-three;
+    }
+
+    &:active {
+      background-color: $light-green-three;
+    }
+  }
+
+  header {
+    text-align: center;
+    font-family: $font-family;
+    color: $white-two;
+
+    h2 {
+      font-size: $font-large;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: $font-small;
+      line-height: $font-large;
+      margin: 0;
+    }
+  }
+
+  main {
+    font-family: $font-family;
+    color: $white-two;
+
+    h3 {
+      font-size: $font-medium;
+      line-height: $font-large;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: $font-small;
+      line-height: $font-medium;
+      margin: 0;
+    }
+
+    .image-item {
+      margin-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      article {
+        h3 {
+          margin: 0;
+        }
+      }
+
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  mat-expansion-panel {
+    margin: 20px 0 20px 0;
+    background-color: $black-two;
+
+    mat-expansion-panel-header {
+      mat-panel-title {
+        font-family: $font-family;
+        font-size: $font-medium;
+        color: $white-two;
+      }
+    }
+
+    h3 {
+      font-family: $font-family;
+      font-size: $font-medium;
+      color: $white-two;
+      line-height: $font-large;
+      margin: 0;
+    }
+
+    p {
+      font-family: $font-family;
+      font-size: $font-small;
+      color: $white-two;
+      line-height: $font-medium;
+      margin: 0;
+    }
+  }
+
+  mat-dialog-actions {
+    gap: 10px;
+    justify-content: end;
+
+    #button-container {
+      padding-bottom: $di-elevation-padding;
+      background-color: $white-two;
+      border-radius: $di-off-radios;
+      transition: all ease 0.3s;
+
+      button {
+        background-color: $white-one;
+        border-radius: $di-radios;
+        font-family: $font-family;
+        font-size: $font-small;
+        font-weight: bold;
+        color: $black-one;
+        transition: all ease 0.3s;
+      }
+
+      &:hover {
+        background-color: $light-green-two;
+        color: $black-two;
+
+        button {
+          background-color: $light-green-one;
+        }
+      }
+
+      &:active {
+        padding-bottom: 2px;
+        transform: scaleY(0.99) translateY(2px);
+        background-color: $light-green-four;
+
+        .close-button {
+          background-color: $light-green-three;
+        }
+      }
+    }
+  }
+}

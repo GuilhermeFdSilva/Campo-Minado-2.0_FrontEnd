@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { InitialDialogComponent } from './initial-dialog/initial-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
 
@@ -7,14 +7,12 @@ import { MatDialog } from '@angular/material/dialog';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
-  title = 'Campo-Minado';
+export class AppComponent implements AfterViewInit{
+  title = 'Campo Minado';
 
   constructor(private matDialog: MatDialog) { }
 
-  ngOnInit(): void {
-    this.matDialog.open(InitialDialogComponent, {
-      width: '90vw'
-    });
+  ngAfterViewInit(): void {
+    this.matDialog.open(InitialDialogComponent, InitialDialogComponent.getConfig());
   }
 }

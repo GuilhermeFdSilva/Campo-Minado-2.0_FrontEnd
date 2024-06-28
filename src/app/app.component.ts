@@ -1,4 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { LocalStorageService } from 'src/assets/services/data-classes/local-storage/local-storage.service';
 import { InitialDialogComponent } from './initial-dialog/initial-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
 
@@ -10,9 +11,13 @@ import { MatDialog } from '@angular/material/dialog';
 export class AppComponent implements AfterViewInit{
   title = 'Campo Minado';
 
-  constructor(private matDialog: MatDialog) { }
+  constructor(private matDialog: MatDialog, public storage: LocalStorageService) { }
 
   ngAfterViewInit(): void {
-    this.matDialog.open(InitialDialogComponent, InitialDialogComponent.getConfig());
+    if (!this.storage.hasReadTerms()) {
+      this.matDialog.open(InitialDialogComponent, {
+        width: "90vw"
+      });
+    }
   }
 }

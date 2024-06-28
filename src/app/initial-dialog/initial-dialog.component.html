@@ -37,16 +37,16 @@
   </main>
 
   <div id="terms" *ngIf="!storage.hasReadTerms()">
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>Armazenamento</mat-panel-title>
-    </mat-expansion-panel-header>
-    <h3>Como Funciona o Salvamento dos Jogos?</h3>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Armazenamento</mat-panel-title>
+      </mat-expansion-panel-header>
+      <h3>Como Funciona o Salvamento dos Jogos?</h3>
       <p>Nosso jogo salva automaticamente seu progresso usando a memória do navegador. Isso significa que você pode
         fechar e reabrir o navegador sem perder seu progresso.</p>
       <p><strong>Importante:</strong> Se você limpar os dados do navegador, seu progresso no jogo também será apagado.
       </p>
-  </mat-expansion-panel>
+    </mat-expansion-panel>
   </div>
 
   <mat-dialog-actions *ngIf="!storage.hasReadTerms()">

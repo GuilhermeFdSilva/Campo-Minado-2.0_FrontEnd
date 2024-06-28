@@ -43,6 +43,22 @@ header {
         }
       }
 
+      #help {
+        position: absolute;
+        right: calc(21px + $tb-button-height);
+
+        button {
+          height: $tb-button-height;
+          padding: 0;
+          border: 1px solid $black-one;
+
+          mat-icon {
+            font-size: $tb-button-font-size;
+            margin: 0;
+          }
+        }
+      }
+
       #sharing {
         position: absolute;
         right: 16px;

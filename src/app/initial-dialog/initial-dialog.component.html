@@ -1,4 +1,6 @@
 <mat-dialog-content>
+
+  <!-- Dialog title -->
   <header>
     <h2>
       💣 Bem-vindo ao Campo Minado! 💣
@@ -6,6 +8,7 @@
     <p>O objetivo do jogo é descobrir onde estão todas minas.</p>
   </header>
 
+  <!-- Basic tutorial -->
   <main>
     <h3>1. Começando</h3>
     <p>Clique em qualquer campo para abri-lo. Se for uma mina, você perde. 💥</p>
@@ -36,6 +39,7 @@
     <h3>Que a sorte esteja sempre a seu favor! </h3>
   </main>
 
+  <!-- Storage terms -->
   <div id="terms" *ngIf="!storage.hasReadTerms()">
     <mat-expansion-panel>
       <mat-expansion-panel-header>
@@ -49,6 +53,7 @@
     </mat-expansion-panel>
   </div>
 
+  <!-- Read confirm form -->
   <mat-dialog-actions *ngIf="!storage.hasReadTerms()">
     <mat-checkbox id="checkbox" (change)="checked = $event.checked">Armazenamento</mat-checkbox>
     <div id="button-container">

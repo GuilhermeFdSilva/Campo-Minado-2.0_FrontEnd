@@ -4,9 +4,10 @@ import { EasyComponent } from './easy/easy.component';
 import { HardComponent } from './hard/hard.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'facil', pathMatch: 'full' },
   { path: 'facil', component: EasyComponent },
-  { path: 'dificil', component: HardComponent }
+  { path: 'dificil', component: HardComponent },
+  { path: '', redirectTo: 'facil', pathMatch: 'full' },
+  { path: '**', redirectTo: 'facil' }
 ];
 
 @NgModule({

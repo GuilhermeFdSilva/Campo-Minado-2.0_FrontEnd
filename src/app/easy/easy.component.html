@@ -1,9 +1,12 @@
 <main>
+  <!-- Board of the game -->
   <div id="game-container"
       [ngStyle]="{
           'grid-template-rows': 'repeat(' + board.getRows + ', 1fr)',
           'grid-template-columns': 'repeat(' + board.getColumns + ', 1fr)'
       }">
+
+    <!-- Container of button -->
     <div *ngFor="let field of board.getFields"
         class="button-container"
         [ngClass]="field.isOpen ? containerButtonClass(field) : 'close-button-container'"

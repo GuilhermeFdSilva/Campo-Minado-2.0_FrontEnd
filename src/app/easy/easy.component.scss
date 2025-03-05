@@ -15,6 +15,7 @@ main {
       width: 30px;
       height: 30px;
       border-radius: $gm-off-radios;
+      transition: all ease 0.3s;
 
       .button {
         width: 100%;
@@ -22,6 +23,7 @@ main {
         padding: 2px 0 0 0;
         border-radius: $gm-radios;
         border: none;
+        transition: all ease 0.3s;
 
         img {
           height: 20px;
@@ -35,21 +37,11 @@ main {
       }
     }
 
-    .close-button-container {
-      padding-bottom: $gm-elevation-padding;
-      background-color: $white-two;
-      transition: all ease 0.3s;
-
-      .close-button {
-        background-color: $white-one;
-        transition: all ease 0.3s;
-
-      }
-
+    .active-button-container {
       &:hover {
         background-color: $light-green-two;
 
-        .close-button {
+        .active-button {
           background-color: $light-green-one;
         }
       }
@@ -59,9 +51,18 @@ main {
         transform: scaleY(0.93) translateY(1px);
         background-color: $light-green-four;
 
-        .close-button {
+        .active-button {
           background-color: $light-green-three;
         }
+      }
+    }
+
+    .close-button-container {
+      padding-bottom: $gm-elevation-padding;
+      background-color: $white-two;
+
+      .close-button {
+        background-color: $white-one;
       }
     }
 

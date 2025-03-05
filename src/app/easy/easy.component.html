@@ -1,4 +1,8 @@
 <main>
+  <div id="game-status">
+    <h2>{{ getGameStatus() }}</h2>
+  </div>
+
   <!-- Board of the game -->
   <div id="game-container"
       [ngStyle]="{
@@ -9,11 +13,11 @@
     <!-- Container of button -->
     <div *ngFor="let field of board.getFields"
         class="button-container"
-        [ngClass]="field.isOpen ? containerButtonClass(field) : 'close-button-container'"
+        [ngClass]="containerButtonClass(field)"
         [style.gridRow]="field.getRow"
         [style.gridColumn]="field.getColumn">
       <button class="button"
-            [ngClass]="field.isOpen ? buttonClass(field) : 'close-button'"
+            [ngClass]="buttonClass(field)"
             (click)="openField(field.getRow, field.getColumn)"
             (contextmenu)="toggleFlaged($event, field)">
         <img src="../../assets/icons/Flag.png" alt="Flag" *ngIf="field.isFlagged">
